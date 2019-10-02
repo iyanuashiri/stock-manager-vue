@@ -12,7 +12,7 @@
                 <input id="price" name="price" type="text" v-model="model.shares">
             </div>
             <div>
-                <button type="submit">Buy</button>
+                <button type="submit">Sell</button>
             </div>
         </form>
     </div>
