@@ -32,7 +32,9 @@
         },
         methods: {
             buyStock: async function () {
-                await api.buyStock(this.model)
+                await api.buyStock(this.model);
+                alert(`${this.model.symbol} has been bought.`);
+                await this.$router.push({name: 'stocks'})
             }
         },
 

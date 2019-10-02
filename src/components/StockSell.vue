@@ -32,10 +32,11 @@
         },
         methods: {
             sellStock: async function () {
-                await api.sellStock(this.model)
+                await api.sellStock(this.model);
+                alert(`${this.model.symbol} has been sold.`);
+                await this.$router.push({name: 'stocks'})
             }
         },
-
     }
 </script>
 
