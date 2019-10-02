@@ -49,7 +49,7 @@
         },
         methods: {
             signUp: async function () {
-                let url = 'https://stock-manager.herokuapp.com/auth/users/'
+                let url = 'https://stockplace.herokuapp.com/auth/users/'
                 axios.post(url, this.model).then(response => {
                     alert('Your account has been created successfully')
                     this.$router.push({name: 'sign-in'})

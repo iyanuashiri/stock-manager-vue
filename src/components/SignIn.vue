@@ -37,7 +37,7 @@
         },
         methods: {
             signIn: async function () {
-                let url = 'https://stock-manager.herokuapp.com/auth/token/login';
+                let url = 'https://stockplace.herokuapp.com/auth/token/login';
                 axios.post(url, this.model).then(response => {
                     localStorage.setItem('authToken', response.data.auth_token);
                     localStorage.setItem('email', this.model.email);

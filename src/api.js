@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const client = axios.create({
-    baseURL: 'https://stock-manager.herokuapp.com',
+    baseURL: 'https://stockplace.herokuapp.com',
     json: true
 })
 
