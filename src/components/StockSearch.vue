@@ -2,14 +2,16 @@
     <div id="StockSearch">
         <NavBar></NavBar>
 
-        <form v-on:submit.prevent="sellStock">
-            <div>
-                <label for="symbol"></label>
-                <input id="symbol" name="symbol" type="text" v-model="model.symbol">
-            </div>
+        <form v-on:submit.prevent="searchStock">
+            <div class="form-group">
+                <div class="col-4">
+                    <label for="symbol"></label>
+                    <input id="symbol" class="form-control" name="symbol" type="text" v-model="model.symbol">
+                </div>
 
-            <div>
-                <button type="submit">Search</button>
+                <div class="col-4">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
             </div>
         </form>
 

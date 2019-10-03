@@ -6,7 +6,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <router-link :to="{name: 'stocks'}" class="nav-item nav-link active" href="#">My Stocks<span class="sr-only">(current)</span></router-link>
+                <router-link :to="{name: 'stocks'}" class="nav-item nav-link active" href="#">My Stocks</router-link>
                 <router-link :to="{name: 'stock-buy'}" class="nav-item nav-link" href="#">Buy</router-link>
                 <router-link :to="{name: 'stock-sell'}" class="nav-item nav-link" href="#">Sell</router-link>
                 <router-link :to="{name: 'stock-search'}" class="nav-item nav-link" href="#">Search Stock</router-link>
@@ -27,7 +27,7 @@
         name: 'NavBar',
         methods: {
             signOut: async function () {
-                let url = 'http://stock-manager.herokuapp.com/api/auth/token/logout/'
+                let url = 'http://stockplace.herokuapp.com/api/auth/token/logout/'
                 await axios.post(url)
                 localStorage.removeItem('authToken')
                 alert('You have logged out successfully')

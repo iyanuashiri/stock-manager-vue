@@ -32,7 +32,7 @@ export default {
         return this.execute('get', `/stocks/${symbol}/search/`)
     },
     getTransactions () {
-        return this.execute('put', `/transactions/`)
+        return this.execute('get', `/transactions/`)
     },
 
 

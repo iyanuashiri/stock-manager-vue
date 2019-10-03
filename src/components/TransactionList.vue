@@ -2,10 +2,10 @@
     <div id="TransactionList">
         <NavBar></NavBar>
 
-        <div v-for="transaction in transactions.results" :key="transaction.id">
-            <div class="card" style="width: 18rem;">
+        <div v-for="transaction in transactions" :key="transaction.id">
+            <div class="card" style="width: 30rem;">
                 <div class="card-body">
-                    <h5 class="card-title">{{transaction.user}} {{transaction.verb}} {{transaction.target}}</h5>
+                    <h5 class="card-title">{{transaction.verb}} of {{transaction.target.name}}</h5>
                 </div>
             </div>
         </div>

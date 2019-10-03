@@ -3,16 +3,18 @@
         <NavBar></NavBar>
 
         <form v-on:submit.prevent="sellStock">
-            <div>
-                <label for="symbol"></label>
-                <input id="symbol" name="symbol" type="text" v-model="model.symbol">
-            </div>
-            <div>
-                <label for="price"></label>
-                <input id="price" name="price" type="text" v-model="model.shares">
-            </div>
-            <div>
-                <button type="submit">Sell</button>
+            <div class="form-group">
+                <div class="col-4">
+                    <label for="symbol"></label>
+                    <input id="symbol" name="symbol" class="form-control" placeholder="symbol" type="text" v-model="model.symbol">
+                </div>
+                <div class="col-4">
+                    <label for="price"></label>
+                    <input id="price" name="price" class="form-control" placeholder="number of shares" type="text" v-model="model.shares">
+                </div>
+                <div class="col-4">
+                    <button type="submit" class="btn btn-primary">Sell</button>
+                </div>
             </div>
         </form>
     </div>

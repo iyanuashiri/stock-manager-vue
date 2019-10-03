@@ -2,7 +2,7 @@
     <div id="StockList">
         <NavBar></NavBar>
 
-        <div v-for="stock in stocks.results" :key="doc.id">
+        <div v-for="stock in stocks" :key="stock.id">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">{{stock.symbol}}</h5>
